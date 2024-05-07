@@ -1,0 +1,11 @@
+name|type|data|command|depend|seed|path|time|size|bytes|format|repository|iteration|parent|children|seconds|warnings|error
+bar_plot|stem|c70544af01eed8b5|cb3e3aa11d120e93|60b0b40386bc5e1d|-391102612||t19799.5717989926s|4b07d48e2633db09|56226|rds|local|vector|||0.015||
+clean_data|function|ed58bf064f57d7a7|||||||||||||||
+clean_movie|stem|da6605c3908b8a55|4c5de089b5e20d0e|b209034e3ef95495|1892288303||t19799.5675452443s|439cb2eb3f19d712|7198|rds|local|vector|||0.024||
+genre_rating|function|c482ffe73248a7d8|||||||||||||||
+genres_to_exclude|object|c305575f875a00c9|||||||||||||||
+get_rating|stem||0e97f2d1fdb75e19|d72fcc0d4fab4e34|585612446||t19799.5712151865s||0|rds|local|vector|||0.002||could not find function genre_rating
+get_tab|function|9977b80ec124ec14|||||||||||||||
+movie_file|stem|dd656fb87e7d026f|f648f7be256f814a|ef46db3751d8e999|-247971179|raw-data/movies.xlsx|t19798.8227798945s|8b557187f8be1a5c|193759|file|local|vector|||0.243||
+plot_scatter|function|08d43fc3b5246f0c|||||||||||||||
+tab_get|stem|5f2aeeca5395daf0|fd3d65eb8e270d62|43c06fc735a3d1fc|-330789988||t19799.5712151271s|73c58980ceb343dd|23917|rds|local|vector|||0.029|Since gt v0.3.0, columns  vars... has been deprecated. Please use columns  c... instead.. Since gt v0.3.0, columns  vars... has been deprecated. Please use columns  c... instead.|

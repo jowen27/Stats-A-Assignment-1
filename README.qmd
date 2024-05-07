@@ -1,0 +1,37 @@
+---
+title: README
+author: Jowen Aui
+date: today
+date-format: long
+format: 
+  html: 
+    self-contained: true
+    df-print: tibble
+editor_options: 
+  chunk_output_type: console
+execute: 
+  warning: false
+  message: false
+---
+
+Firstly, I created a new project in RStudio to carry out this assignment. The targets package was used to carry out the analysis of the excel spreadsheet 'movies.xlsx'. I have been asked to find out which genre gives the best rating for Christmas movies
+
+After going through the excel spreadsheet, I have found that there are a few redundant columns for the purpose of this analysis such as tconst, the title of the movies, the runtime etc. The Christmas column also indicates whether a movie is Christmas themed, by stating TRUE in the cell. Therefore, with all this in consideration, I cleaned the data by selecting the columns that were relevant to the analysis which are the average ratings and the genre while filtered to check if the movies were Christmas movies.
+
+Looking at the cleaned data, in the genres column it seemed like for one movie there could be more than one genre for each movie. In order to solve that, I decided to separate the movie into each genre, this means that the if a movie has 3 genres, then that movie is separated into three entries, one for each genre. After further inspection, it seems like the spreadsheet includes certain genres that do not seem to be Christmas movies such as reality tv, documentary, biography, talk show and news. Therefore, those genres were omitted from this analysis. This ensures that it is a fair analysis.
+
+Using this analysis to get a table, i grouped all the movies by genre and then found the average rating for each genre and made a table. From this we are able to see that for christmas movies, the best genre by average rating is history with the average rating of 7.21 and the worst genre is action with 4.83. A barplot was further plotted to illustrate this. In conlcusion, history is the best movie genre for Christmas movies.
+
+```{r, echo = FALSE}
+pacman::p_load(tidyverse, targets, gt,readxl)
+```
+
+
+```{r, echo = FALSE}
+tar_read(tab_get)
+```
+
+```{r, echo = FALSE}
+tar_read(bar_plot)
+```
+
